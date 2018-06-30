@@ -483,7 +483,8 @@ header {
       header .heading {
         transform: scale(1); } }
   header h1 {
-    text-align: center; }
+    text-align: center;
+    padding: 10px; }
   header .border-bottom {
     height: 15px;
     border-bottom: 1px solid #fff;
