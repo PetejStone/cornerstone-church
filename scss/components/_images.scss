@@ -1,0 +1,19 @@
+header {
+  background-image: url('../images/sunrise.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 40em;
+  top: 15px;
+
+}
+
+.mySlides {
+  & img {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+
+  }
+}

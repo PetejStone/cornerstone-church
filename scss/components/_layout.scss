@@ -1,0 +1,98 @@
+
+header {
+  @include flexy(flex, column, null, center);
+  & .heading {
+    transform: scale(.5);
+    @include mq(medium) {
+      transform: scale(1);
+    }
+  }
+  & h1 {
+    text-align: center;
+
+  }
+  & .border-bottom {
+    height: 15px;
+    border-bottom: 1px solid $white;
+    width: 25em;
+    @extend %center;
+  }
+  & .overlay {
+    width: 100%;
+    height: inherit;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1));
+    position: absolute;
+  }
+
+}
+
+.slide-show {
+  height: 15em;
+}
+
+.home-main,
+.about-main{
+  & h2 {
+    text-align: center;
+  }
+  & p {
+
+    text-indent: 25px;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.contact-main {
+  & p,
+  & h2 {
+    text-align: center;
+  }
+}
+
+.about-main,
+.about-sof {
+  & h2 {
+    text-align: center;
+  }
+  width: 70%;
+  @extend %center;
+  & h3 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  & ol {
+    & li {
+      margin: 10px;
+    }
+  }
+  p {
+    text-indent: 0px;
+  }
+}
+
+.connect-main {
+  h2,
+  ul,
+  h3 {
+  text-align: center;
+}
+  & h3 {
+    text-decoration: underline;
+  }
+}
+
+
+footer {
+  background-color: #1f1f14;
+  @include flexy(flex, row, null, space-between);
+  margin-top: 3em;
+  & p {
+    color: $white;
+    margin: 1em;
+    font-size: 12px;
+  }
+  a {
+    align-self: center;
+  }
+}

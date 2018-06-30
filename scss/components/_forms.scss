@@ -1,0 +1,16 @@
+form {
+  @include flexy(flex,column, null, center);
+  width: 900px;
+  max-width: 100%;
+  @extend %center;
+  padding: 2em 1em 0px 1em;
+  & input,
+  & select,
+  & textarea {
+    margin: 5px 0px;
+  }
+}
+
+textarea {
+  font-size: 14px;
+}

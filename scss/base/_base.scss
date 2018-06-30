@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  @include link-reset($white);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  padding: 0px;
+}
+
+a {
+  font-size: 12px;
+}
