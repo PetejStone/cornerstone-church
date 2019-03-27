@@ -2,9 +2,6 @@ const submit = document.querySelector('#submit');
 const form = document.querySelector('form');
 const navIcon = document.querySelector('#nav-icon');
 const nav = document.querySelector('nav');
-const header = document.querySelector('header');
-const main = document.querySelector('main');
-const footer = document.querySelector('footer');
 
 form.addEventListener('submit', (e)=> {
   e.preventDefault();
