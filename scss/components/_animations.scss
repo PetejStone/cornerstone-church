@@ -24,7 +24,8 @@
 nav,
 header,
 footer,
-main {
+main,
+.slideshow-container {
   transition: all .5s;
 }
 
@@ -33,7 +34,7 @@ main {
 }
 
 .slide-left {
-  transform: translateX(-160px);
+  transform: translateX(-140px);
 }
 
 
@@ -41,7 +42,7 @@ main {
 .slideshow-container {
   position: relative;
   margin: auto;
-  background-color: #1f1f14;
+  background: linear-gradient(to right, lighten(#241E20, 10%), #241E20, lighten(#241E20, 10%));
 }
 
 /* Hide the images by default */

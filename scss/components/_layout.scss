@@ -1,11 +1,17 @@
+body {
+  background-color: $black;
+}
 
 header {
+  background-color: #241E20;
   @include flexy(flex, column, null, center);
   & .heading {
-    transform: scale(.5);
+
     @include mq(medium) {
-      transform: scale(1);
+      transform: scale(1.8);
     }
+
+
   }
   & h1 {
     text-align: center;
@@ -20,7 +26,7 @@ header {
   & .overlay {
     width: 100%;
     height: inherit;
-    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1));
+    //background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1));
     position: absolute;
   }
 
@@ -30,14 +36,21 @@ header {
   height: 15em;
 }
 
+main {
+  padding: 5rem 0;
+}
+
 .home-main,
 .about-main{
+  background: $black;
   & h2 {
     text-align: center;
+    padding: 1rem;
+    margin: 0px;
   }
   & p {
 
-    
+
     width: 60%;
     margin: 0 auto;
     margin-top: 5px;
@@ -86,7 +99,7 @@ header {
 
 
 footer {
-  background-color: #1f1f14;
+  background-color: #241E20;
   @include flexy(flex, row, null, space-between);
   margin-top: 3em;
   & p {

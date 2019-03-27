@@ -2,9 +2,10 @@ input[type=submit] {
   background-color: $nav-highlight;
   color: $white;
   border: none;
-  height: 2em;
+  height: 3.2em;
   margin-top: 5px;
-  font-size: 1em;
+  font-size: 1.6rem;
   padding: 0px;
+  border-radius: 5px;
   cursor: pointer;
 }

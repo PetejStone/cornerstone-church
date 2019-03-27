@@ -18,7 +18,8 @@ body {
   overflow-x: hidden; }
 
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 62.5%; }
 
 ul,
 ol {
@@ -421,7 +422,7 @@ template {
 
 nav {
   height: 100vh;
-  width: 10em;
+  width: 15rem;
   background-color: #1f1f14;
   position: fixed;
   top: 0px;
@@ -440,14 +441,28 @@ nav {
     color: #fff; }
 
 * {
-  font-family: 'Oswald', Helvetica; }
+  font-family: 'Oswald', Helvetica;
+  color: #fff; }
 
 header {
   background-color: #fff; }
   header h1 {
     color: #fff;
-    transform: scale(1.5);
     text-shadow: 1px 1px 1px #000; }
+
+p,
+li,
+label {
+  font-size: 1.6rem; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.8rem; }
 
 form {
   display: flex;
@@ -456,31 +471,40 @@ form {
   width: 900px;
   max-width: 100%;
   padding: 2em 1em 0px 1em; }
-  form input, form select, form textarea {
-    margin: 5px 0px; }
+  form input, form select {
+    margin: 5px 0px;
+    color: #000;
+    height: 4rem;
+    font-size: 2rem; }
 
 textarea {
-  font-size: 14px; }
+  margin: 5px 0px;
+  color: #000;
+  height: 20rem;
+  font-size: 2rem; }
 
 input[type=submit] {
   background-color: #69D36E;
   color: #fff;
   border: none;
-  height: 2em;
+  height: 3.2em;
   margin-top: 5px;
-  font-size: 1em;
+  font-size: 1.6rem;
   padding: 0px;
+  border-radius: 5px;
   cursor: pointer; }
 
+body {
+  background-color: #000; }
+
 header {
+  background-color: #241E20;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  header .heading {
-    transform: scale(0.5); }
-    @media (min-width: 640px) {
-      header .heading {
-        transform: scale(1); } }
+  @media (min-width: 640px) {
+    header .heading {
+      transform: scale(1.8); } }
   header h1 {
     text-align: center;
     padding: 10px; }
@@ -491,20 +515,27 @@ header {
   header .overlay {
     width: 100%;
     height: inherit;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), white);
     position: absolute; }
 
 .slide-show {
   height: 15em; }
 
-.home-main h2,
-.about-main h2 {
-  text-align: center; }
-.home-main p,
-.about-main p {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 5px; }
+main {
+  padding: 5rem 0; }
+
+.home-main,
+.about-main {
+  background: #000; }
+  .home-main h2,
+  .about-main h2 {
+    text-align: center;
+    padding: 1rem;
+    margin: 0px; }
+  .home-main p,
+  .about-main p {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5px; }
 
 .contact-main p, .contact-main h2 {
   text-align: center; }
@@ -530,7 +561,7 @@ header {
   text-decoration: underline; }
 
 footer {
-  background-color: #1f1f14;
+  background-color: #241E20;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -565,20 +596,21 @@ footer {
 nav,
 header,
 footer,
-main {
+main,
+.slideshow-container {
   transition: all .5s; }
 
 .show {
   transform: translateX(0%); }
 
 .slide-left {
-  transform: translateX(-160px); }
+  transform: translateX(-140px); }
 
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   margin: auto;
-  background-color: #1f1f14; }
+  background: linear-gradient(to right, #403539, #241E20, #403539); }
 
 /* Hide the images by default */
 .mySlides {
@@ -667,12 +699,16 @@ nav li {
     transform: scale(1.05); }
 
 header {
-  background-image: url("../images/sunrise.jpg");
-  background-size: cover;
+  background-image: url("../images/tcrheader.jpg");
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   max-width: 100%;
   height: 40em;
   top: 15px; }
+  @media (min-width: 640px) {
+    header {
+      height: 55rem; } }
 
 .mySlides img {
   width: auto;

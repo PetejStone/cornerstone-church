@@ -10,17 +10,18 @@ const overlay = document.querySelector('.overlay');
 const application = document.querySelector('#app');
 const cancel = document.querySelector('#cancel');
 const form = document.querySelector('form');
-
+const slideshow = document.querySelector('.slideshow-container');
 
 
 
 //nav functionality
 navIcon.addEventListener('click',()=> {
   navIcon.classList.toggle("change");
-
+  // navIcon.classList.toggle('slide-left');
   nav.classList.toggle('show');
   header.classList.toggle('slide-left');
   main.classList.toggle('slide-left');
+  slideshow.classList.toggle('slide-left');
   footer.classList.toggle('slide-left');
 
 });

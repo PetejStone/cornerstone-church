@@ -5,12 +5,17 @@ form {
   @extend %center;
   padding: 2em 1em 0px 1em;
   & input,
-  & select,
-  & textarea {
+  & select {
     margin: 5px 0px;
+    color: $black;
+    height: 4rem;
+    font-size: 2rem;
   }
 }
 
 textarea {
-  font-size: 14px;
+  margin: 5px 0px;
+  color: $black;
+  height: 20rem;
+  font-size: 2rem;
 }
